@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>信息滚动扩充</title>
+    <link rel="stylesheet" type="text/css" href="jquery.limarquee.extend/liMarquee.css"/>
+    <script src="jquery.limarquee.extend/lib/jquery-1.8.3.js"></script>
+    <script src="jquery.limarquee.extend/lib/jquery.mousewheel.js"></script>
+    <script src="jquery.limarquee.extend/jquery.liMarquee.extend.js"></script>
+</head>
+<style>
+    .container {
+        height: 300px;
+        width: 500px;
+        background: tan;
+    }
+    .container .scroll-view {
+        height: 100%;
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="scroll-view">
+            <div class="scroll-item">信息滚动1</div>
+            <div class="scroll-item">信息滚动2</div>
+            <div class="scroll-item">信息滚动3</div>
+            <div class="scroll-item">信息滚动4</div>
+            <div class="scroll-item">信息滚动5</div>
+            <div class="scroll-item">信息滚动6</div>
+            <div class="scroll-item">信息滚动7</div>
+            <div class="scroll-item">信息滚动8</div>
+            <div class="scroll-item">信息滚动9</div>
+            <div class="scroll-item">信息滚动10</div>
+            <div class="scroll-item">信息滚动11</div>
+            <div class="scroll-item">信息滚动12</div>
+            <div class="scroll-item">信息滚动13</div>
+            <div class="scroll-item">信息滚动14</div>
+            <div class="scroll-item">信息滚动15</div>
+            <div class="scroll-item">信息滚动16</div>
+            <div class="scroll-item">信息滚动17</div>
+            <div class="scroll-item">信息滚动18</div>
+            <div class="scroll-item">信息滚动19</div>
+            <div class="scroll-item">信息滚动20</div>
+        </div>
+    </div>
+    <script>
+        $(".scroll-view").liMarquee({
+            // 滚动方向
+            direction: 'up',
+            // 滚动速度
+            scrollamount: 30,
+            // 是否可以鼠标滚动
+            mousewheel: true,
+            // 是否可以拖动
+            drag: true
+        })
+    </script>
+</body>
+</html>
