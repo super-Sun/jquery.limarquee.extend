@@ -8,10 +8,10 @@ $(dom).liMarquee({
             direction: 'up',
             // 滚动速度
             scrollamount: 30,
-            // 是否可以鼠标滚动
-            mousewheel: true,
             // 是否可以拖动
-            drag: true
+            drag: true,
+            // 拓展属性: 是否可以用鼠标滚轮来控制滚动
+            mousewheel: true
 })
 ```
 # 效果图
